@@ -1,6 +1,6 @@
 # Verificação — 27/10/2026
 
-**Status: concluído localmente.** Publicação e repositório remoto dependem de confirmação separada. Não há defeitos conhecidos pendentes dentro do escopo aprovado.
+**Status atual: publicado no GitHub Pages, com autorização do usuário em 27/10/2026.** As verificações locais abaixo registram a etapa inicial; a seção final documenta a publicação. Não há defeitos conhecidos pendentes dentro do escopo aprovado.
 
 ## Ambiente e checks executados
 
@@ -60,12 +60,24 @@ Também foram corrigidos o nome acessível da marca identificado pelo axe e a al
 - Nenhuma tecnologia do My Life Planner, certificado, emprego ou funcionalidade concluída foi inventada.
 - CSP, bloqueio de frames e `nosniff` de `vercel.json` foram conferidos em um servidor local que aplica esses cabeçalhos. **Não foram verificados na Vercel**, pois não houve deploy.
 - Build observado: JavaScript principal **241,71 kB bruto / 74,68 kB gzip**; CSS **28,81 kB / 7,30 kB gzip**. Quatro fontes WOFF2 somam cerca de **54,90 kB**. Não foi atribuído score Lighthouse nem medida de Core Web Vitals em campo.
-- Sem repositório público, push, deploy, infraestrutura paga ou mudança de permissões.
+- Na etapa inicial, não havia repositório público, push ou deploy. A publicação posterior foi autorizada e está registrada ao final; não foi contratada infraestrutura paga nem ampliada a permissão da integração.
 
 ## Limites e próximos passos
 
 - Firefox, Safari, dispositivos físicos, NVDA/VoiceOver, zoom nativo e hardware lento não foram testados.
-- Publicação, comportamento real dos cabeçalhos na hospedagem, domínio e metadados com URL definitiva só podem ser verificados após autorização.
+- A publicação do GitHub Pages foi verificada conforme a seção final. Os cabeçalhos específicos da Vercel seguem sem verificação nessa plataforma, pois não houve deploy nela.
 - A página não depende de LinkedIn, contatos adicionais ou repositório do projeto; esses dados seguem ausentes até confirmação.
 
 Para evoluir o conteúdo, veja o README e `src/data/portfolio.ts`. Para publicar, revisar o destino com o usuário antes de qualquer ação remota.
+
+## Publicação confirmada — GitHub Pages
+
+- Site: **https://miguelcruver.github.io/**, respondendo HTTP 200 por HTTPS.
+- Código: **https://github.com/MiguelCruver/MiguelCruver.github.io**, repositório público da conta confirmada MiguelCruver.
+- A origem do Pages foi configurada como GitHub Actions. Build e deploy concluíram com sucesso em [execução 40603773390](https://github.com/MiguelCruver/MiguelCruver.github.io/actions/runs/40603773390), para o commit `b481e24af5e10affc259ad4a01e8e5461583ee02`.
+- As etapas de instalação pelo lockfile, formatação, testes e build passaram também no runner Ubuntu do GitHub. Todas as actions estão fixadas por SHA; o job de build tem permissões de leitura e o job de deploy tem as permissões necessárias somente para Pages.
+- Os 29 arquivos de código, configuração, testes e documentação foram comparados com a versão local verificada após o envio. O histórico inicial local foi preservado.
+- A versão de produção contém URL canônica, `og:url` e CSP em metatag compatível com Pages. Não inclui `frame-ancestors` na metatag, pois essa diretiva depende de cabeçalho HTTP.
+- Revisão no endereço público: seis seções presentes, estilos carregados, sem rolagem horizontal na largura mobile de 390px, menu de projetos com foco correto e nenhum aviso ou erro observado no console.
+- O site não depende do servidor local. Atualizações na branch `main` executam verificações e republicação; falhas mantêm o último deploy bem-sucedido. Uma atualização posterior apenas deste relatório usa `[skip ci]`, pois não altera o aplicativo validado.
+- A hospedagem segue sujeita à disponibilidade e às políticas do GitHub e à manutenção da conta/repositório. Não há promessa de hospedagem eterna. O código e o ZIP atualizado permitem migração futura.
