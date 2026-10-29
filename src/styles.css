@@ -634,6 +634,15 @@ h1 > span:first-of-type {
   grid-template-columns: 1.05fr 1fr;
   background: #101726;
 }
+.project-card[data-project="glide"] .project-preview,
+.project-card[data-project="glide"] .project-preview img {
+  background: #000;
+}
+.project-info-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
 .project-preview {
   position: relative;
   min-height: 360px;

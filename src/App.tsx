@@ -181,7 +181,7 @@ export default function App() {
                 <span aria-hidden="true" />
                 Da ideia à prática
               </span>
-              <h2 id="projects-title">Projetos em construção.</h2>
+              <h2 id="projects-title">Meus projetos.</h2>
             </div>
             <p>
               Um espaço para experimentar, aprender

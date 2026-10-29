@@ -5,6 +5,7 @@ export interface Project {
   status: string;
   technologies?: string[];
   repositoryUrl?: string;
+  websiteUrl?: string;
   image?: { src: string; alt: string };
 }
 
@@ -24,6 +25,19 @@ export const navigation = [
 ];
 
 export const projects: Project[] = [
+  {
+    id: "glide",
+    name: "GLIDE",
+    description:
+      "Um aplicativo para Windows que reúne música, vídeos e comunicação em um só hub. Criei o Glide para acompanhar o setup de quem joga, com miniplayer e o Glide Connect para reunir o grupo.",
+    status: "Publicado · pré-lançamento",
+    websiteUrl: "https://miguelcruver.github.io/Glide/",
+    repositoryUrl: "https://github.com/MiguelCruver/Glide",
+    image: {
+      src: "/projects/glide.png",
+      alt: "Logo do Glide em cristal verde, ciano e azul",
+    },
+  },
   {
     id: "my-life-planner",
     name: "My Life Planner",

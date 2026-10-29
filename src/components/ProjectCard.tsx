@@ -3,7 +3,11 @@ import Icon from "./Icon";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="project-card" aria-label={project.name}>
+    <article
+      className="project-card"
+      aria-label={project.name}
+      data-project={project.id}
+    >
       <div className="project-preview">
         {project.image ? (
           <img
@@ -49,6 +53,18 @@ export default function ProjectCard({ project }: { project: Project }) {
           </ul>
         ) : null}
         <div className="project-info-footer">
+          {project.websiteUrl ? (
+            <a
+              className="text-link"
+              href={project.websiteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Conhecer o projeto
+              <span className="sr-only"> (abre em nova aba)</span>
+              <Icon name="arrow-up" size={18} />
+            </a>
+          ) : null}
           {project.repositoryUrl ? (
             <a
               className="text-link"

@@ -30,6 +30,7 @@ Campos opcionais só devem ser preenchidos com informações confirmadas:
 | Campo           | Uso                                                               |
 | --------------- | ----------------------------------------------------------------- |
 | `technologies`  | Lista de tecnologias realmente usadas                             |
+| `websiteUrl`    | URL HTTPS do site publicado do projeto                            |
 | `repositoryUrl` | URL HTTPS do repositório disponível                               |
 | `image`         | `{ src: '/projects/imagem.webp', alt: 'Descrição da tela real' }` |
 
